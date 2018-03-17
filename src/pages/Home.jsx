@@ -9,6 +9,7 @@ const images = Array.from(new Array(12), (_, i) => `./content/${i + 1}.jpg`);
 export const Home = () => {
     return (
         <div className={style.content}>
+            <h1 className={style.h1}>Image gallery</h1>
             <Desktop>
                 <ImagesGrid images={images} />
             </Desktop>

@@ -6,7 +6,7 @@ import {ConnectedRouter} from 'react-router-redux';
 import {history} from './libs/configureStore';
 
 import {Home} from './pages/Home';
-import {Category} from './pages/Category';
+import {CategoryConnected} from './pages/Category';
 import {Product} from "./pages/Product";
 import {Cart} from "./pages/Cart";
 import style from './css/_layout.scss';
@@ -24,7 +24,7 @@ class App extends Component<PropsType> {
                     </header>
 
                     <Switch>
-                        <Route path="/category/:id" component={Category} />
+                        <Route path="/category" component={CategoryConnected} />
                         <Route path="/product" component={Product} />
                         <Route path="/cart" component={Cart} />
                         <Route path="/" component={Home} />
