@@ -1,0 +1,20 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-color: #f0f0f0;
+    color: #141414;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header {
+    height: 40px;
+}
+
+.container {
+    padding: 0 40px;
+}

@@ -1,0 +1,8 @@
+:root {
+    --color-red: #e10000;
+    --viewport-sm: '(max-width: 500px)';
+}
+
+@custom-media --sm-viewport (max-width: 1279px);
+@custom-media --md-viewport (min-width: 1280px) and (max-width: 1439px);
+@custom-media --lg-viewport (min-width: 1440px);
