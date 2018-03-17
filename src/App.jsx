@@ -17,7 +17,7 @@ class App extends Component<PropsType> {
     render(): Node {
         const {wishesPopup} = this.props;
         return (
-            <ConnectedRouter history={history}>
+            <ConnectedRouter history={history} basename="/medium-app">
                 <div className="App">
                     <header className={style.header}>
                         <Menu />
