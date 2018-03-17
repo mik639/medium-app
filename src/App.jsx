@@ -35,6 +35,4 @@ class App extends Component<PropsType> {
     }
 }
 
-const mapStateToProps = (state: {}): PropsType => ({wishesPopup: state.wishList.popup})
-
-export default connect(mapStateToProps)(App)
+export default connect()(App)
