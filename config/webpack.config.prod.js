@@ -1,6 +1,9 @@
 'use strict';
 
+const breakpoints = require('../src/constants/mediaqueries');
 const autoprefixer = require('autoprefixer');
+const customMedia = require('postcss-custom-media');
+const precss = require('precss');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -40,8 +43,9 @@ const cssFilename = 'static/css/[name].[contenthash:8].css';
 // However, our output is structured with css, js and media folders.
 // To have this structure working with relative paths, we have to use custom options.
 const extractTextPluginOptions = shouldUseRelativeAssetPaths ? // Making sure that the publicPath goes back to to build folder.
-    { publicPath: Array(cssFilename.split('/').length).join('../') } :
-    {};
+    {
+        publicPath: Array(cssFilename.split('/').length).join('../')
+    } : {};
 
 // This is the production configuration.
 // It compiles slowly and is focused on producing a fast and minimal bundle.
@@ -131,6 +135,7 @@ module.exports = {
                     /\.html$/,
                     /\.(js|jsx)$/,
                     /\.css$/,
+                    /\.scss$/,
                     /\.json$/,
                     /\.bmp$/,
                     /\.gif$/,
@@ -179,7 +184,7 @@ module.exports = {
                             use: [{
                                     loader: require.resolve('css-loader'),
                                     options: {
-                                        importLoaders: 1,
+                                        importLoaders: 2,
                                         modules: true,
                                         minimize: true,
                                         sourceMap: true,
@@ -191,6 +196,10 @@ module.exports = {
                                         ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
                                         plugins: () => [
                                             require('postcss-flexbugs-fixes'),
+                                            customMedia({
+                                                extensions: breakpoints,
+                                            }),
+                                            precss(),
                                             autoprefixer({
                                                 browsers: [
                                                     '>1%',
