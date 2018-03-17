@@ -53,19 +53,19 @@ class Category extends React.PureComponent {
                     <div>
                         <label>
                             <input name="color" type="radio" value="blue" onChange={this.onChange}/>
-                            Large
+                            Blue
                         </label>
                     </div>
                     <div>
                         <label>
                             <input name="color" type="radio" value="red" onChange={this.onChange}/>
-                            Medium
+                            Red
                         </label>
                     </div>
                     <div>
                         <label>
                             <input name="color" type="radio" value="green" onChange={this.onChange}/>
-                            Small
+                            Green
                         </label>
                     </div>
                 </div>
