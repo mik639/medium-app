@@ -6,9 +6,5 @@ import wishList from './wishes';
 import items from './items';
 
 export const rootReducer = combineReducers({
-    listReducer,
-    footerReducer,
-    wishList,
-    items,
     router: routerReducer,
 });
