@@ -9,5 +9,6 @@ export const Menu = () => (
         <Link to="/category">Category</Link>
         <Link to="/product">Product</Link>
         <Link to="/cart">Cart</Link>
+        <Link to="/normalizr">Normalizr</Link>
     </nav>
 )

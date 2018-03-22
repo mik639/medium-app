@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {replace} from 'react-router-redux';
+import {replace, push} from 'react-router-redux';
 import style from '../css/_layout.scss';
 
 class Category extends React.PureComponent {
@@ -24,6 +24,11 @@ class Category extends React.PureComponent {
     onChange = (e) => {
         const {currentTarget: input} = e;
         this.setState({[input.name]: input.value}, this.updateUrl);
+    }
+
+    goToHome = () => {
+        const {dispatch} = this.props;
+        dispatch(push('/'));
     }
 
     render() {
@@ -69,6 +74,7 @@ class Category extends React.PureComponent {
                         </label>
                     </div>
                 </div>
+                <button onClick={this.goToHome}>To home page</button>
             </div>
         )
     }

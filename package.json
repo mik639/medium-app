@@ -5,11 +5,13 @@
   "homepage": "https://mik639.github.io/medium-app/",
   "dependencies": {
     "history": "^4.7.2",
+    "normalizr": "^3.2.4",
     "nuka-carousel": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
     "precss": "^3.1.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-json-view": "^1.16.1",
     "react-redux": "^5.0.5",
     "react-responsive": "^4.0.5",
     "react-router": "^4.2.0",

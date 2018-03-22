@@ -11,6 +11,7 @@ import {Product} from "./pages/Product";
 import {Cart} from "./pages/Cart";
 import style from './css/_layout.scss';
 import {Menu} from './components/menu/Menu';
+import { Normalizr } from "./pages/Normalizr";
 
 class App extends Component<PropsType> {
 
@@ -27,6 +28,7 @@ class App extends Component<PropsType> {
                         <Route path="/category" component={CategoryConnected} />
                         <Route path="/product" component={Product} />
                         <Route path="/cart" component={Cart} />
+                        <Route path="/normalizr" component={Normalizr} />
                         <Route path="/" component={Home} />
                     </Switch>
                 </div>
