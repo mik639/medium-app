@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://mik639.github.io/medium-app/",
   "dependencies": {
+    "classnames": "^2.2.5",
     "history": "^4.7.2",
     "normalizr": "^3.2.4",
     "nuka-carousel": "^4.0.0",

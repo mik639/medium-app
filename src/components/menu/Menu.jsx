@@ -7,8 +7,8 @@ export const Menu = () => (
     <nav className={style.wrapper}>
         <Link to="/">Home</Link>
         <Link to="/category">Category</Link>
-        <Link to="/product">Product</Link>
-        <Link to="/cart">Cart</Link>
         <Link to="/normalizr">Normalizr</Link>
+        <Link to="/context">Context</Link>
+        <Link to="/refs">Refs</Link>
     </nav>
 )

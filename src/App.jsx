@@ -7,11 +7,12 @@ import {history} from './libs/configureStore';
 
 import {Home} from './pages/Home';
 import {CategoryConnected} from './pages/Category';
-import {Product} from "./pages/Product";
+import {Refs} from "./pages/Refs";
 import {Cart} from "./pages/Cart";
+import {AboutContext} from './pages/Context';
 import style from './css/_layout.scss';
 import {Menu} from './components/menu/Menu';
-import { Normalizr } from "./pages/Normalizr";
+import {Normalizr} from "./pages/Normalizr";
 
 class App extends Component<PropsType> {
 
@@ -19,19 +20,22 @@ class App extends Component<PropsType> {
         const {wishesPopup} = this.props;
         return (
             <ConnectedRouter history={history}>
-                <div className="App">
-                    <header className={style.header}>
-                        <Menu />
-                    </header>
+                <React.StrictMode>
+                    <div className="App">
+                        <header className={style.header}>
+                            <Menu />
+                        </header>
 
-                    <Switch>
-                        <Route path="/category" component={CategoryConnected} />
-                        <Route path="/product" component={Product} />
-                        <Route path="/cart" component={Cart} />
-                        <Route path="/normalizr" component={Normalizr} />
-                        <Route path="/" component={Home} />
-                    </Switch>
-                </div>
+                        <Switch>
+                            <Route path="/category" component={CategoryConnected} />
+                            <Route path="/refs" component={Refs} />
+                            <Route path="/cart" component={Cart} />
+                            <Route path="/normalizr" component={Normalizr} />
+                            <Route path="/context" component={AboutContext} />
+                            <Route path="/" component={Home} />
+                        </Switch>
+                    </div>
+                </React.StrictMode>
             </ConnectedRouter>
         );
     }
