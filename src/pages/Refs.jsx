@@ -15,8 +15,6 @@ export class Refs extends React.PureComponent {
     }
 
     render() {
-        console.log('start render', this.player);
-
         return (
             <div className={style.content}>
                 <div className={style.container}>

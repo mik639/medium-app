@@ -8,7 +8,7 @@ import {history} from './libs/configureStore';
 import {Home} from './pages/Home';
 import {CategoryConnected} from './pages/Category';
 import {Refs} from "./pages/Refs";
-import {Cart} from "./pages/Cart";
+import {Lifecycles} from "./pages/Lifecycles";
 import {AboutContext} from './pages/Context';
 import style from './css/_layout.scss';
 import {Menu} from './components/menu/Menu';
@@ -29,7 +29,7 @@ class App extends Component<PropsType> {
                         <Switch>
                             <Route path="/category" component={CategoryConnected} />
                             <Route path="/refs" component={Refs} />
-                            <Route path="/cart" component={Cart} />
+                            <Route path="/lifecycles" component={Lifecycles} />
                             <Route path="/normalizr" component={Normalizr} />
                             <Route path="/context" component={AboutContext} />
                             <Route path="/" component={Home} />

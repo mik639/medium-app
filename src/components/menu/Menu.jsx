@@ -10,5 +10,6 @@ export const Menu = () => (
         <Link to="/normalizr">Normalizr</Link>
         <Link to="/context">Context</Link>
         <Link to="/refs">Refs</Link>
+        <Link to="/lifecycles">Lifecycles</Link>
     </nav>
 )
