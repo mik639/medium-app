@@ -20,7 +20,7 @@ class App extends Component<PropsType> {
     const { wishesPopup } = this.props;
     return (
       <ConnectedRouter history={history}>
-        <div className="App">
+        <div className="App feature-2">
           <header className={style.header}>
             <Menu />
           </header>
