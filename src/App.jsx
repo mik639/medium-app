@@ -18,9 +18,10 @@ import ToDo from "./pages/Todo";
 class App extends Component<PropsType> {
   render(): Node {
     const { wishesPopup } = this.props;
+    // comment
     return (
       <ConnectedRouter history={history}>
-        <div className="App">
+        <div className="App feature-1">
           <header className={style.header}>
             <Menu />
           </header>
