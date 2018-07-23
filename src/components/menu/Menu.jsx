@@ -11,5 +11,6 @@ export const Menu = () => (
         <Link to="/context">Context</Link>
         <Link to="/refs">Refs</Link>
         <Link to="/lifecycles">Lifecycles</Link>
+        <Link to="/todo">ToDo</Link>
     </nav>
 )

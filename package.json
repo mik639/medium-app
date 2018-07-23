@@ -6,6 +6,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "history": "^4.7.2",
+    "nanoid": "^1.0.7",
     "normalizr": "^3.2.4",
     "nuka-carousel": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
@@ -19,6 +20,7 @@
     "react-router-dom": "^4.1.1",
     "react-router-redux": "^5.0.0-alpha.9",
     "redux": "^3.6.0",
+    "redux-actions": "^2.4.0",
     "reselect": "^3.0.1"
   },
   "devDependencies": {
